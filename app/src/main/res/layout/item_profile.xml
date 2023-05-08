@@ -26,6 +26,23 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/username"
+                android:text="Profile Name"
+                android:textStyle="bold|normal"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#0F22BC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:ignore="InvalidId" />
+            <TextView
+
+                android:text="Work in Android development and application UI design"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#666667"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 card_view:ignore="InvalidId" />
