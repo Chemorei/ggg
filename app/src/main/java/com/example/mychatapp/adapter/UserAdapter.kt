@@ -1,10 +1,12 @@
 package com.example.mychatapp.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mychatapp.ChatActivity
 import com.example.mychatapp.R
 import com.example.mychatapp.databinding.ItemProfileBinding
 import com.example.mychatapp.model.User
@@ -29,5 +31,13 @@ RecyclerView.Adapter<UserAdapter.UserViewHolder>()
         Glide.with(context).load(user.profileImage)
             .placeholder(R.drawable.profile)
             .into(holder.binding.profile)
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, ChatActivity::class.java)
+            intent.putExtra("name",user.name)
+            intent.putExtra("image",user.profileImage)
+            intent.putExtra("uid",user.uid)
+            context.startActivity(intent)
+
+                       }
     }
 }

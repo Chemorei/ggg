@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/camera/baseline_camera_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/send/baseline_send_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="474040" />
-                            <entry key="outputName" value="ic_cam" />
+                            <entry key="color" value="4c4343" />
+                            <entry key="outputName" value="ic_send" />
                             <entry key="sourceFile" value="C:\Users\user\Downloads\chatt-main\chatt-main" />
                           </map>
                         </option>
