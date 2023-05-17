@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mychatapp-mergeDebugResources-33:/values-sl/values-sl.xml",
+            "outputFile": "com.example.mychatapp-mergeDebugResources-34:/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\0512bc401e954585d97ec8483d21717a\\transformed\\browser-1.4.0\\res\\values-sl\\values-sl.xml",

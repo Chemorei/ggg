@@ -2731,6 +2731,9 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable backg
 drawable background_shape
+drawable backgwall
+drawable blogo
+drawable bottom_shape
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2739,6 +2742,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable chattt
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2767,6 +2771,8 @@ drawable getotp
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
+drawable ic_back
+drawable ic_cam
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -2780,6 +2786,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable ic_send
+drawable ic_share
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -2852,10 +2860,14 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable persons
+drawable placeholder
 drawable profile
+drawable receive_drawable
+drawable send_drawable
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable tree
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2941,6 +2953,7 @@ id anticipate
 id arc
 id asConfigured
 id async
+id attatchment
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -2964,6 +2977,8 @@ id browser_actions_menu_view
 id buttonPanel
 id cache_measures
 id callMeasure
+id camera
+id cancel
 id cancel_button
 id carryVelocity
 id center
@@ -3009,6 +3024,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3045,6 +3061,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id everyone
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3067,6 +3084,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3087,6 +3105,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id immediateStop
 id included
 id indeterminate
@@ -3106,9 +3125,13 @@ id light
 id line1
 id line3
 id linear
+id linear01
+id linear02
 id listMode
 id list_item
 id m3_side_sheet
+id mLinear
+id mRec
 id marquee
 id masked
 id match_constraint
@@ -3135,6 +3158,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id messageBox
 id middle
 id mini
 id month_grid
@@ -3168,6 +3192,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3210,12 +3235,15 @@ id pin
 id position
 id postLayout
 id pressed
+id profile
+id profile01
 id profileBox
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3260,6 +3288,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendBtn
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3293,6 +3322,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id status
 id stop
 id stretch
 id submenuarrow
@@ -3333,6 +3363,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3349,6 +3380,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3475,6 +3507,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_chat
 layout activity_main
 layout activity_otpactivity
 layout activity_setup_profile
@@ -3482,6 +3515,7 @@ layout activity_verification
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
+layout delete_layout
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -3497,6 +3531,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_profile
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3554,12 +3589,17 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout receive_message
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout send_message
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap ic_logooo
+mipmap ic_logooo_foreground
+mipmap ic_logooo_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 string Sendtext
@@ -3632,6 +3672,7 @@ string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string gcm_defaultSenderId
+string get_solution
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key

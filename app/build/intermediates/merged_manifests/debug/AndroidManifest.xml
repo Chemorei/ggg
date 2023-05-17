@@ -34,6 +34,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyChatApp" >
         <activity
+            android:name="com.example.mychatapp.ChatActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.mychatapp.SetupProfileActivity"
             android:exported="false" />
         <activity

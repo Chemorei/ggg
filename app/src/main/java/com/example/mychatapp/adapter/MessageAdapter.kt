@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.bumptech.glide.Glide
 import com.example.mychatapp.R
 import com.example.mychatapp.databinding.DeleteLayoutBinding
 import com.example.mychatapp.databinding.SendMessageBinding
@@ -57,14 +58,15 @@ class MessageAdapter (
             val viewHolder = holder as SentMsgHolder
             if (message.message.equals("photo")) {
                 viewHolder.binding.image.visibility = View.VISIBLE
-                viewHolder.binding.message.visibility = View.GONE
-                viewHolder.binding.mLinear.visibility = View.GONE
+                viewHolder.binding.message.visibility=View.GONE
+                viewHolder.binding.mLinear.visibility=View.GONE
+
                 Glide.with(context)
                     .load(message.imageUrl)
                     .placeholder(R.drawable.placeholder)
                     .into(viewHolder.binding.image)
             }
-            viewHolder.binding.message.text = message
+            viewHolder.binding.message.text = message.toString()
             viewHolder.itemView.setOnLongClickListener {
 
                 val view = LayoutInflater.from(context)
@@ -109,19 +111,20 @@ class MessageAdapter (
         } else {
 
             val ViewHolder = holder as ReceiveMsgHolder
-            if (message.mesaage.equals("photo")) {
-                viewHolder.binding.image.visibility = View.VISIBLE
-                viewHolder.binding.message.visibility = View.GONE
-                viewHolder.binding.mLinear.visibility = View.GONE
+            if (message.message.equals("photo")) {
+                ViewHolder.binding.image.visibility = View.VISIBLE
+                ViewHolder.binding.message.visibility = View.GONE
+                ViewHolder.binding.mLinear.visibility = View.GONE
+
                 Glide.with(context)
                     .load(message.imageUrl)
                     .placeholder(R.drawable.placeholder)
-                    .into(viewHolder.binding.image)
+                    .into(ViewHolder.binding.image)
             }
 
-        }
-        viewHolder.binding.message.text = message
-        viewHolder.itemView.setOnLongClickListener {
+
+        ViewHolder.binding.message.text = message.toString()
+        ViewHolder.itemView.setOnLongClickListener {
 
             val view = LayoutInflater.from(context)
                 .inflate(R.layout.delete_layout, null)
@@ -160,6 +163,7 @@ class MessageAdapter (
             binding.cancel.setOnClickListener { dialog.dismiss() }
             dialog.show()
             false
+        }
 
         }
 

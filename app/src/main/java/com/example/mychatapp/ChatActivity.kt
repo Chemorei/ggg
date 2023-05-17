@@ -9,6 +9,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 import com.example.mychatapp.adapter.MessageAdapter
 import com.example.mychatapp.databinding.ActivityChatBinding
 import com.example.mychatapp.model.Message
@@ -81,8 +82,8 @@ class ChatActivity : AppCompatActivity() {
         receiverRoom = receiverUid + senderUid
         adapter = MessageAdapter(this,messages,senderRoom!!,receiverRoom!!)
 
-        binding!!.recyclerview.layoutManager = LinearLayoutManager(this)
-        binding!!.recyclerview.adapter = adapter
+        binding!!.recyclerView.layoutManager = LinearLayoutManager(this)
+        binding!!.recyclerView.adapter = adapter
         database!!.reference.child("chats")
             .child(senderRoom!!)
             .child("message")

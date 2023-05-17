@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mychatapp-mergeDebugResources-33:/values-af/values-af.xml",
+            "outputFile": "com.example.mychatapp-mergeDebugResources-34:/values-af/values-af.xml",
             "map": [
                 {
                     "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\ed3819af41362406a8a7ff1e1744c148\\transformed\\appcompat-1.6.1\\res\\values-af\\values-af.xml",

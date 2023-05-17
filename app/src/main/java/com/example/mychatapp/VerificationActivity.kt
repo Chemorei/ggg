@@ -17,7 +17,7 @@ class VerificationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_verification)
         editnumber = findViewById(R.id.editnumber)
-        continueBtn = findViewById(R.id.editnumber)
+        continueBtn = findViewById(R.id.continueButton)
 
         auth = FirebaseAuth.getInstance()
         if (auth!!.currentUser != null){
